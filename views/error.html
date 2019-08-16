@@ -1,0 +1,16 @@
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript" src="/javascripts/common/jquery.min.js"></script>
+</head>
+
+<body>
+    <text></text>
+</body>
+<script>
+    $("title").html("<%= JSON.parse(error.status) %>"); 
+    $('text').html("<%= JSON.stringify(error.message) %>")
+</script>
+
+</html>
