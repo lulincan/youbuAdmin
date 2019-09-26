@@ -36,7 +36,7 @@ router.post('/login', function (req, res, next) {
   var params = req.body;
   var account = params.account;
   var password = params.password;
-  db.connect("select * from adminUser where account = ?", account, (result) => {
+  db.connect("select * from User where name = ?", account, (result) => {
     if (!result) {
       jsonReturn.setJson(res, '500', { msg: '没有此管理员' })
     }

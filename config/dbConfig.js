@@ -1,9 +1,9 @@
 
 var dbConfig = {
-    host: '127.0.0.1',
+    host: 'http://47.93.47.177',
     user: 'root',
     password: 'root',
-    database: 'youbu',
+    database: 'xyyMedal',
     port: 3306
   };
    
